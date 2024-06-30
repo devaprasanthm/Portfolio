@@ -1,0 +1,661 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+.header {
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+    padding: 35px 12%;
+    background: rgb(30, 2, 81);
+    backdrop-filter: blur(10px);
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+.logo{
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+.logo:hover{
+    color: orangered;
+    text-shadow:0 0 25px orangered,0 0 50px orangered;
+    transform: scale(1.1);
+}
+
+span{
+    color: orangered;
+}
+
+.navbar a{
+    font-size: 15px;
+    color:rgb(231, 214, 214);
+    font-weight: 500px;
+    margin: 0 20px;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+}
+.navbar a:hover,
+.navbar a:active{
+    color:orangered;
+    border-bottom: 3px solid orangered;
+}
+
+
+.navbar-menu-toggle {
+  color:rgb(231, 214, 214);
+  display:none;
+}
+
+/* side navbar */
+
+.side-navbar {
+  background-color: rgb(8, 1, 20);
+  width: 50%;
+  height: 500px;
+  position: fixed;
+  display: block;
+  top:100%;
+  left: -60%;
+  padding: 20px;
+  color: white;
+  text-decoration: solid;
+  transition: 1.5s;
+  
+}
+
+.side-navbar a:hover,
+.side-navbar a:active{
+   color:orangered;
+   
+}
+
+
+.side-navbar-links{
+ padding-left: 40px;
+ 
+  color: white;
+  display: none;
+ 
+}
+
+
+
+
+/* ------------------------------------------------------- */
+.home{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(12, 11, 11);
+    display: flex;
+    align-items: center;
+    gap:7em;
+    padding: 30px 12% 0;
+
+}
+
+.home-content{
+    max-width: 800px;
+   
+}
+ .home-content h3{
+    font-size: 42px;
+    color: rgb(251, 247, 247);
+
+ }
+ .home-content h1{
+    font-size: 50px;
+    line-height: 1.2;
+    color: rgb(248, 245, 245);
+
+ }
+ .home-content p{
+    font-size: 18px;
+    margin: 25px 0 30px;
+    color: rgb(245, 239, 239);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+ }
+
+img{
+    border-radius : 100px ;
+}
+
+
+#para{
+    text-align: justify;
+    line-height: 1.5;
+}
+
+/* -----------------------ABOUT PAGE------------------- */
+
+.about{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(20, 20, 20);
+    display: flex;
+    padding: 30px 12% ;
+
+}
+.about-content{
+    max-width: 800px;
+   
+}
+ .about-content h3{
+    
+    color: rgb(241, 89, 12);
+
+ }
+ .about-content h1{
+    padding-top: 100px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: rgb(245, 241, 241);
+
+ }
+#edu{
+    padding: 10px;
+    padding-left: 30px;
+}
+
+table{
+    background-color: rgb(211, 205, 205);
+    margin-left: 50px;
+    border-radius: 8px;
+}
+
+/* ---------------------------skils page---------------------- */
+.skills{
+    width: 100%;
+    min-height: 100vh;
+    background: rgb(4, 4, 4);
+    display: flex;
+    padding: 30px 12% ;
+    box-sizing: border-box;
+
+}
+
+.skills-content{
+    max-width: 800px;
+   
+}
+ .skills-content h3{
+    
+    color: rgb(241, 89, 12);
+
+ }
+ .skills-content h1{
+    padding-top: 100px;
+    font-size: 50px;
+    line-height: 1.2;
+    color: rgb(250, 247, 247);
+
+ }
+ .skills-content li{
+   color: rgb(250, 247, 247);
+ }
+
+ .tech-skills{
+    
+    flex-wrap: wrap;
+    
+ }
+ .ts{
+    
+    
+    padding-bottom: 20px; 
+ }
+ .skills-list {
+    padding-left: 70px;
+    gap:300px;
+ }
+
+ .skills-list li{
+    padding-top: 18px;
+ }
+ #icons{
+    display: flex;
+ }
+ .soft {
+    padding-left: 0;
+ }
+ .soft li{
+    padding-top: 18px;
+    padding-left: 50px;
+    color: rgb(250, 247, 247);
+
+ }
+ .ceritify p{
+   color: rgb(250, 247, 247);
+ }
+
+ /* achievements */
+ #achieve{
+    padding-top: 40px;
+    padding-left: 40px;
+ }
+ .achieve-list{
+    padding-top: 40px;
+    padding-left: 70px;
+ }
+
+ /* -------------------projects----------------------- */
+ .project{
+    padding-left: 70px;
+    padding-top: 30px;
+    
+ }
+ .project div{
+    background-color: rgb(244, 228, 206);
+    padding: 30px;
+    border-radius: 15px;
+ }
+ .project h4{
+   text-decoration: underline;
+ }
+ .describtion{
+   text-align: justify;
+   padding-top:10px;
+   padding-left: 30px;
+   line-height: 1.5;
+ }
+
+
+ /* --------------------contact page---------------- */
+ .contact-details{
+   max-width: 800px;
+   
+}
+
+.contact-details h1{
+   padding-top: 100px;
+   font-size: 50px;
+   line-height: 1.2;
+   color: rgb(250, 247, 247);
+   width: 300px;
+}
+ .con{
+   color: white;
+ }
+
+ .contact-left{
+   flex-basis: 35%;
+ }
+
+
+
+ .contact-left p i{
+   color: #ff004f;
+ }
+
+ .social-icons{
+   padding-top: 50px;
+ }
+
+ .social-icons a{
+   text-decoration: none;
+   margin-right: 15px;
+   transition: transform(0.9s);
+ }
+ .social-icons a :hover
+ {
+   color:#e10b4f ;
+   transform: translateY(-15px);
+   font-size: 50px;
+ }
+ 
+ .btn{
+   display:inline-block;
+   background-color: #e10b4f;
+   text-align: center;
+   padding-top: 25px;
+   height: 70px;
+   width: 170px;
+ }
+
+ .btn-submit{
+  display:inline-block;
+  background-color: #e10b4f;
+  text-align: center;
+  padding-top: 25px;
+  height: 70px;
+  width: 170px;
+}
+
+ .row{
+   display: inline-flex;
+   justify-content: space-between;
+ }
+
+ .contact-left{
+   padding-right: 200px;
+   padding-top: 20px;
+   padding-left: 100px;
+ }
+ .contact-right{
+   margin-top: 110px;
+   padding-left: -80px;
+   padding-right: 100px;
+   
+ }
+ .contact-right{
+   width: 600px;
+
+ }
+
+ form input,form textarea{
+   width: 100%;
+   border: 0;
+   outline: none;
+   background: #262626;
+   padding: 15px;
+   margin: 15px 0;
+   color: #fff;
+   font-size: 18px;
+   border-radius: 6px;
+ }
+ .contact-right button{
+border-radius: 5px;
+text-align: center;
+padding: 10px;
+margin-left: 150px;
+color: beige;
+font-size: 20px;
+ }
+
+
+
+ i{
+  cursor: pointer;
+ }
+
+ /* CSS for desktop and larger screens */
+@media only screen and (min-width: 768px) {
+   .home {
+       gap: 7em;
+   }
+   .home-content h1 {
+       font-size: 50px;
+   }
+}
+
+/* CSS for tablets and smaller screens */
+@media only screen and (max-width: 767px) {
+   .header {
+       padding: 20px 5%;
+   }
+   .logo {
+       font-size: 18px;
+   }
+   .navbar a {
+      display: none;
+       font-size: 14px;
+       margin: 0 15px;
+   }
+   .side-navbar{
+    display: block;
+   }
+   
+   .side-navbar-links{
+    display: block;
+   }
+   .navbar-menu-toggle{
+    display: block;
+   }
+
+   .home {
+       flex-direction: column;
+       align-items: center;
+       padding-top: 80px;
+       gap: 3em;
+   }
+   .home-content {
+       max-width: 90%;
+       text-align: center;
+   }
+   .home-content h3 {
+       font-size: 32px;
+   }
+   .home-content h1 {
+       font-size: 40px;
+   }
+   .home-content p {
+       font-size: 16px;
+       margin: 20px 0 25px;
+   }
+   img{
+    width:300px;
+    height: 300px;
+   }
+}
+
+/* CSS for smaller mobile screens */
+@media only screen and (max-width: 480px) {
+   .home-content h1 {
+       font-size: 36px;
+   }
+   .home-content p {
+       font-size: 14px;
+       margin: 15px 0 20px;
+   }
+}
+
+/* ----------------------about---------------- */
+@media only screen and (max-width: 700px) {
+  .about {
+      padding: 30px 5%;
+  }
+  
+  .about-content h1 {
+      font-size: 30px;
+  }
+  
+  table {
+      margin-left: 0;
+  }
+  .exp-img{
+    height: 30px;
+    width: 30px;
+  }
+}
+
+@media only screen and (max-width: 280px) {
+  .about {
+    padding: 30px 10%;
+}
+
+.about-content h1 {
+    font-size: 10px;
+}
+
+table {
+    margin-right: 0;
+}
+.exp-img{
+  height: 30px;
+  width: 30px;
+}
+}
+
+@media only screen and (max-width: 767px) {
+  .about {
+    padding: 30px 5%;
+}
+
+.about-content h1 {
+    font-size: 30px;
+}
+
+table {
+    margin-right: 0;
+}
+.exp-img{
+  height: 30px;
+  width: 30px;
+}
+}
+
+/* ----------------------------skills---------------- */
+/* Media Query for Tablets */
+@media (max-width: 768px) {
+  .skills {
+      padding: 20px 8%; /* Adjust padding for tablets */
+  }
+
+  .skills-content {
+      max-width: 80%; /* Adjust max-width for tablets */
+  }
+
+  .skills-content h1 {
+      font-size: 45px; /* Adjust font size for tablets */
+  }
+  .soft{
+    margin-right: 0;
+  }
+  .pyandsql{
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Media Query for Desktops */
+@media (max-width: 1024px) {
+  .skills {
+      padding: 20px 10%; /* Adjust padding for desktops */
+  }
+
+  .skills-content {
+      max-width: 70%; /* Adjust max-width for desktops */
+  }
+
+  .skills-content h1 {
+      font-size: 50px; /* Adjust font size for desktops */
+  }
+  .soft{
+    margin-right: 0;
+  }
+  .pyandsql{
+    width: 20px;
+    height: 20px;
+  }
+}
+@media only screen and (max-width: 480px){
+  .skills {
+    padding: 15px 10%; /* Adjust padding for desktops */
+}
+
+.skills-content {
+    max-width: 70%; /* Adjust max-width for desktops */
+}
+
+.skills-content h1 {
+    font-size: 50px; /* Adjust font size for desktops */
+}
+.soft{
+  margin-right: 0;
+}
+.pyandsql{
+  width: 20px;
+  height: 20px;
+}
+}
+
+@media only screen and (max-width: 380px){
+.skills {
+  padding: 10px 5%; /* Adjust padding for desktops */
+}
+
+.skills-content {
+  max-width: 70%; /* Adjust max-width for desktops */
+}
+
+.skills-content h1 {
+  font-size: 50px; /* Adjust font size for desktops */
+}
+.soft{
+margin-right: 0;
+}
+.pyandsql{
+width: 20px;
+height: 20px;
+}}
+
+
+/* ----------------------------projects----------------- */
+@media (max-width: 700px) {
+  .project{
+    padding-left: 35px;
+    padding-top: 15px;
+    
+ }
+ .project div{
+    background-color: rgb(244, 228, 206);
+    padding: 15px;
+    border-radius: 15px;
+ }
+ .project h4{
+   text-decoration: underline;
+ }
+ .describtion{
+   text-align: justify;
+   padding-top:10px;
+   padding-left: 30px;
+   line-height: 1;
+ }
+}
+
+
+/* ---------------------------contact------------- */
+@media (max-width: 750px) {
+.row{
+  display: inline;
+  max-width: 100%;
+  overflow: hidden;
+}
+.contact-right{
+  width: 400px;
+  margin-left: 10%;
+
+}
+.contact-right button{
+  
+  margin-left: 80px;
+}
+.contact-details{
+  max-width: 100%;
+}
+}
+
+@media (max-width: 350px){
+  .row{
+    display: inline;
+    max-width: 100%;
+    overflow: hidden;
+  }
+  .contact-right{
+    width: 400px;
+    
+  
+  }
+  .contact-right button{
+    
+    margin-left: 80px;
+  }
+  .contact-details{
+    max-width: 100%;
+  }
+  h1{
+    text-align: left;
+  }
+  
+}

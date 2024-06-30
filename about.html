@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <a href="#" class="logo"><span>My</span>Portfolio</a>
+    
+    <nav class="navbar">
+        <a href="index.html" class="active">HOME</a>
+        <a href="about.html" style="color:orangered;">ABOUT</a>
+        <a href="skills.html">SKILLS</a>
+        <a href="project.html">PROJECTS</a>
+        <a href="contact.html">CONTACT</a>
+        <div class="navbar-menu-toggle" onclick="showNavbar()">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+    </nav>
+    
+
+    <!-- side navbar -->
+<div class="side-navbar">
+    <p style="text-align: right;" onclick="closenavbar()">
+        <i class="fa-solid fa-xmark"></i>
+    </p>
+    <div >
+        <a href="index.html" style="color:orangered;" class="side-navbar-links">HOME</a><br><br><br><br>
+        <a href="about.html" class="side-navbar-links">ABOUT</a><br><br><br><br>
+        <a href="skills.html" class="side-navbar-links">SKILLS</a><br><br><br><br>
+        <a href="project.html" class="side-navbar-links">PROJECTS</a><br><br><br><br>
+        <a href="contact.html" class="side-navbar-links">CONTACT</a>
+    </div>
+</div>
+
+</header>
+<section class="about">
+    <div class="about-content">
+        <div>
+            <h1 id="abt">ABOUT ME...</h1>
+            <br>
+            <h3 id="edu"><i class="fa-solid fa-school fa-xl" style="color: #0b5fef;"></i>&nbsp;  EDUCATION</h3>
+            <br>
+            <table border="3px solid black">
+                <th style="padding: 8px; color:rgb(27, 4, 54)" >DEGREE</th>
+                <th style="padding: 8px;"><b>NAME OF INSTITUTION</b></th>
+                <th style="padding: 8px;">Year of Passing</th>
+                <th style="padding: 8px;">Percentage</th>
+                <tr>
+                    <td style="padding: 8px; text-align:center;" >B.Tech(IT)</td>
+                    <td style="padding: 8px; text-align:center;">M.P.Nachimuthu M.Jaganathan Engineering College,Chennimalai </td>
+                    <td style="padding: 8px; text-align:center;">2024</td>
+                    <td style="padding: 8px; text-align:center;">78%</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; text-align:center;">HSC</td>
+                    <td style="padding: 8px; text-align:center;">The Richmond Matric Higher Secondary School,Seenapuram </td>
+                    <td style="padding: 8px; text-align:center;">2020</td>
+                    <td style="padding: 8px; text-align:center;">81%</td>
+                </tr>
+                <tr>
+                    <td style="padding: 8px; text-align:center;">SSLC</td>
+                    <td style="padding: 8px; text-align:center;">Brainstorm Higher Secondary School,Grey nagar </td>
+                    <td style="padding: 8px; text-align:center;">2018</td>
+                    <td style="padding: 8px; text-align:center;">85.2%</td>
+                </tr>
+                
+            </table>
+            <br>
+            <br>
+            <h3 id="edu" ><img src="experience.jfif" width="30px" height="30px" class="exp-img" > &nbsp; INTERNSHIP EXPERIENCE</h3>
+            <br>
+            <table border="5px solid black">
+                <th style="padding: 10px;">Company Name</th>
+                <th style="padding: 10px;">Domain</th>
+                <th style="padding: 10px;">Duration</th>
+                <tr>
+                    <td style="padding: 8px; text-align:center;">Ether Infotech</td>
+                    <td style="padding: 8px; text-align:center;">Python Full Stack</td>
+                    <td style="padding: 8px; text-align:center;">3 months</td>
+                </tr>
+            </table>
+
+        </div>
+    </div>
+</section>
+
+
+<script src="script.js"></script>
+</body>
+</html>
